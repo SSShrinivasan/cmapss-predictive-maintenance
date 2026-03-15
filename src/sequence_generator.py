@@ -6,7 +6,7 @@ def generate_sequences(dataframe, sequence_length):
     labels = []
 
     # remove columns not used as features
-    feature_cols = dataframe.columns.difference(['unit_number','RUL'])
+    feature_cols = dataframe.columns.difference(['unit_number','time_in_cycles','RUL'])
 
     for unit in dataframe['unit_number'].unique():
 
